@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/ECoder_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:text="二维码生成与扫描"
+        android:textColor="#ff646464"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/ECoder_image"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_below="@+id/ECoder_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/shape_main_imageview" />
+
+    <EditText
+        android:id="@+id/ECoder_input"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ECoder_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_main_edit"
+        android:hint="输入Url,生成二维码" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ECoder_input"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" >
+
+        <Button
+            android:id="@+id/ECoder_creator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="生成二维码"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/ECoder_scaning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@color/colorPrimary"
+            android:text="扫描二维码"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout-->
+<!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--xmlns:tools="http://schemas.android.com/tools"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent"-->
+<!--tools:context=".MainActivity">-->
+
+<!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+        <!--<zj.neverland.myapplication.camera.CameraPreview-->
+            <!--android:id="@+id/capture_preview"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"/>-->
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/capture_crop_view"-->
+            <!--android:layout_width="250dp"-->
+            <!--android:layout_height="250dp"-->
+            <!--android:layout_centerInParent="true">-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:src="@drawable/qr_scan_frame"/>-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/capture_scan_line"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@drawable/qr_scan_line"/>-->
+        <!--</RelativeLayout>-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/capture_mask_top"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_above="@id/capture_crop_view"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:background="@drawable/qr_scan_shadow"/>-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/capture_mask_bottom"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_below="@id/capture_crop_view"-->
+            <!--android:background="@drawable/qr_scan_shadow"/>-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/capture_mask_left"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_above="@id/capture_mask_bottom"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_below="@id/capture_mask_top"-->
+            <!--android:layout_toLeftOf="@id/capture_crop_view"-->
+            <!--android:layout_toStartOf="@id/capture_crop_view"-->
+            <!--android:background="@drawable/qr_scan_shadow"/>-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/capture_mask_right"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_above="@id/capture_mask_bottom"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_below="@id/capture_mask_top"-->
+            <!--android:layout_toEndOf="@id/capture_crop_view"-->
+            <!--android:layout_toRightOf="@id/capture_crop_view"-->
+            <!--android:background="@drawable/qr_scan_shadow"/>-->
+    <!--</RelativeLayout>-->
+
+    <!--<Button-->
+        <!--android:id="@+id/capture_restart_scan"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:gravity="center"-->
+        <!--android:text="ReStart Scan"/>-->
+
+<!--</RelativeLayout>-->
+
+<!--<android.support.v7.widget.Toolbar-->
+    <!--android:id="@+id/toolbar"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="?attr/actionBarSize"-->
+    <!--android:background="@android:color/transparent"-->
+    <!--app:title="@string/app_name"-->
+    <!--app:titleTextColor="@android:color/white"/>-->
+
+<!--</RelativeLayout>-->

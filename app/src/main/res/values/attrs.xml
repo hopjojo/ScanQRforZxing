@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<declare-styleable name="ViewfinderView">
+    <!--提示文字1-->
+    <attr name="StatusText" format="string"/>
+    <!--提示文字2-->
+    <attr name="StatusSubText" format="string"/>
+    <!--文字颜色-->
+    <attr name="StatusTextColor" format="color"/>
+    <!--文字大小-->
+    <attr name="StatusTextSize" format="dimension"/>
+    <attr name="TextGravityBottom" format="boolean"/>
+    <!--取景框四角颜色 -->
+    <attr name="FrameBound_CornerColor" format="color"/>
+    <!--取景框四角宽度-->
+    <attr name="FrameBound_CornerWidth" format="dimension"/>
+    <!--取景框四角长度-->
+    <attr name="FrameBound_CornerLength" format="dimension"/>
+    <!--取景框边框颜色-->
+    <attr name="FrameBoundColor" format="color"/>
+    <!--扫描线-->
+    <attr name="ScanLightType">
+        <enum name="LINE" value="0"/>
+        <enum name="PICTURE" value="1"/>
+        <enum name="GRID" value="2"/>
+    </attr>
+    <attr name="ScanLightColor" format="color"/>
+    <attr name="ScanLight" format="reference"/>
+    <!--取景框外背景颜色-->
+    <attr name="OutSideColor" format="color"/>
+</declare-styleable>
+</resources>
